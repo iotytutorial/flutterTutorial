@@ -1,11 +1,11 @@
 import 'package:fluter/ui/MyHomePage.dart';
 import 'package:flutter/material.dart';
 
-void main(){
-  runApp(const MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget{
+  //constructor class MyFloatingButton because StatelessWidget standart
+  //manual api https://api.flutter.dev/flutter/widgets/StatelessWidget-class.html
   const MyApp({Key? key}) : super (key: key);
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget{
       theme: ThemeData(
         primarySwatch: Colors.red
       ),
-      // this function call class MyHomePage
+      // this function call m
       home: const MyHomePage(title : "hello Flutter"),
     );
   }
