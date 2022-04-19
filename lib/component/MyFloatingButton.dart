@@ -14,6 +14,7 @@ class MyFloatingButton extends StatefulWidget{
 class _MyFloatingButtonState extends State<MyFloatingButton>{
   @override
   Widget build(BuildContext context) {
+
     // create component floating buttton with FloatingActionButton
     return FloatingActionButton(onPressed:(){
       //create method call toast

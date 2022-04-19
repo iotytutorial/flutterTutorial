@@ -1,5 +1,6 @@
 // class MyhomePage Create Page with App bar
 
+import 'package:fluter/component/MyBottomNavigationBar.dart';
 import 'package:fluter/component/MyFloatingButton.dart';
 import 'package:flutter/material.dart';
 
@@ -29,7 +30,13 @@ class _MyHomePage extends State<MyHomePage> {
         ),
         title: Text(widget.title),
       ),
+
+      //setting position floating bar
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      // add floating button
       floatingActionButton: const MyFloatingButton(),
+      //add bottom navigation bar
+      bottomNavigationBar: const MyBottomNavigationBar(),
     );
   }
 }
